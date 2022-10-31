@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    - console.log('roundedCornerResizer',roundedCornerResizer)
+  body
+    script(src="https://unpkg.com/htmx.org@1.8.2")
+    #parent-div
+      button(hx-get="/contact", hx-trigger="click", hx-target="#div", hx-swap="innerHTML")
+        | Click Me1!
+    #div.mt-2
+    #aa
+      img(src=roundedCornerResizer)
+  
